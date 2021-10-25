@@ -16,7 +16,7 @@ package Week01;
  *  e) Delete this sample packages.
  *  f) Commit and push once completed
  */
-public class L01Q01 {
+public class W01E03 {
 
     /**
      * @param args the command line arguments

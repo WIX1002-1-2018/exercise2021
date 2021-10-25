@@ -4,23 +4,28 @@
  */
 package Week02;
 
+import java.util.Scanner;
+
 /**
  *
  * @author askba
  */
-public class E01 {
+public class W02E04 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int number01, number02;
-        number01 = 1;
-        number02 = 2;
+        Scanner input = new Scanner(System.in);
         
-        System.out.println("Number 01 + Number 02 = " + (number01+number02));
-        System.out.printf("%d + %d = %d", number01, number02, number01+number02);
+        int num01, num02;
+        
+        System.out.print("Enter two numbers: ");
+        num01 = input.nextInt();
+        num02 = input.nextInt();
+        System.out.printf("The value entered : %d %d\n", num01,num02);
+        System.out.printf("%d + %d = %d", num01,num02, num01+num02);
     }
     
 }

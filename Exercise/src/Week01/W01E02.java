@@ -8,7 +8,7 @@ package Week01;
  *
  * @author askba
  */
-public class E02 {
+public class W01E02 {
 
     /**
      * @param args the command line arguments
