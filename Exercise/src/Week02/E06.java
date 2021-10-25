@@ -19,16 +19,16 @@ public class E06 {
         String FirstName = "Abu";
         String LastName = "Bakar";
         
-        String FullName = FirstName + " " + LastName;
+        String FullName = FirstName + "+" + LastName;
         
         System.out.println(myName);
-        System.out.println(myName.charAt(4));
+        System.out.println(myName.charAt(5));// will print the 5th character
         
         System.out.println(FullName);
         
         int num = 1234567;
         String numToString = Integer.toString(num);
-        System.out.println(numToString.charAt(3));
+        System.out.println(numToString.charAt(6));
         
     }
     
