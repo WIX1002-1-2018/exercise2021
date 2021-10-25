@@ -4,35 +4,31 @@
  */
 package Week02;
 
+import java.util.Random;
+
 /**
  *
  * @author askba
  */
-public class E3 {
+public class E05 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Random rand = new Random();
         
-        float num01, num02, num03;
-        num01 = 20;
-        num02 = 3;
-        num03 = num01/num02;
+        int randNum01, randNum02;
         
-        System.out.printf("\nThe answer is %3.3f",num03);
+        randNum01 = rand.nextInt(100);
+        randNum02 = rand.nextInt(40);
+        System.out.println(randNum01 + " " + randNum02);
         
-        int numX01, numX02;
+        int randNum03;
         
-        double numX03;
-        numX01 = 20;
-        numX02 = 3;
-        numX03 = numX01/(float) numX02;
-        
-        System.out.printf("\nThe answer is %3.3f",numX03);
-        
-        
+        randNum03 = rand.nextInt(51) + 50;
+        System.out.println("Random Number between 50-100: "  + randNum03);
     }
     
 }
