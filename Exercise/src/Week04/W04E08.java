@@ -18,7 +18,7 @@ public class W04E08 {
         label1:{
         for(int j = 0;j<10;j++){
            for(int i = 0;i < 10; i++){
-            if(j==5)
+            if(i==5)
               break label1;
             System.out.println("Value J: " + j + " Value I: " + i);
            }
