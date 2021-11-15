@@ -33,26 +33,31 @@ public class W05E02 {
                     System.out.print("Enter the sales in kg: ");
                     add = in.nextDouble();
                     sum += add * 25.0;
+                    break;
                 }
                 case "HL" : {
                     System.out.print("Enter the sales in kg: ");
                     add = in.nextDouble();
                     sum += add * 22.0;
+                    break;
                 }
                 case "D24" : {
                     System.out.print("Enter the sales in kg: ");
                     add = in.nextDouble();
                     sum += add * 20.0;
+                    break;
                 }
                 case "UM" : {
                     System.out.print("Enter the sales in kg: ");
                     add = in.nextDouble();
                     sum += add * 18.0;
+                    break;
                 }
                 default : {
+                    break;
                 }
             }
-        } while (!(ans.equals("Quit")));
+        } while (!(ans.equalsIgnoreCase("Quit")));
         
         System.out.printf("Total sales: %.2f\n", sum);
     }
