@@ -21,7 +21,7 @@ public class W05E09 {
         int compare=0;
         System.out.print("Enter how many numbers:");
         int loop = input.nextInt();
-        System.out.print("Enter a number : ");
+        System.out.print("Enter number : ");
         int max = input.nextInt();
         for(int i=0;i<loop-1;i++){
             compare = input.nextInt();
