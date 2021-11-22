@@ -18,7 +18,7 @@ public class W06E05 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         int arraySize;
+        int arraySize;
         Scanner input = new Scanner(System.in);
         Random rand =  new Random();
         
