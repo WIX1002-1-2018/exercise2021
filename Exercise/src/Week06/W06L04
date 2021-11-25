@@ -1,0 +1,55 @@
+package holiday;
+
+import java.util.Scanner;
+
+public class lab4_Q4 {
+
+    public static void main(String[] args) {
+        
+        // Write a program that ask user to enter the year and the first day of the year
+        // (0 for Sunday, 1 for Monday, … , 6 for Saturday). Display the calendar for May and August.
+        
+        Scanner sc = new Scanner(System.in);
+        int year, first, feb, may, aug, counter, jump = 0;
+        System.out.print("Enter the year: ");
+        year = sc.nextInt();
+        System.out.print("The first day of the year: ");
+        first = sc.nextInt();
+
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+            feb = 29;
+        else
+            feb = 28;
+
+        may = feb + 92; // Jan - April the day count 
+        aug = 184 + feb; // Jan - July the day count 
+        System.out.println("\t\t\t\t\t\t\t\tMAY");
+        may = (may % 7 + first) % 7; // (28 + 92) = (120 % 7= 1 + 5)% 7 = 6 (Saturday) Know the first day of the month
+        aug = (aug % 7 + first) % 7; // (28 + 184) = (212 % 7 = 2 + 5) % 7 = 0 (Sunday)
+        System.out.println("Sunday\t\tMonday\t\tTuesday\t\tWednesday\t\tThursday\t\tFriday\t\tSaturday");
+        for (counter = 0; counter < may; counter++) { // 6
+            System.out.print("\t\t\t");
+            jump++; // 6
+        }
+        for (int i = 1; i <= 31; i++) {
+            System.out.print(i + "\t\t\t");
+            jump++; //7 14
+            if (jump % 7 == 0)
+                System.out.println("\n");
+        }
+        System.out.println("\n\t\t\t\t\t\t\t\tAugust");
+
+        System.out.println("Sunday\t\tMonday\t\tTuesday\t\tWednesday\t\tThursday\t\tFriday\t\tSaturday");
+        jump = 0;
+        for (counter = 0; counter < aug; counter++) {
+            System.out.print("\t\t\t");
+            jump++;
+        }
+        for (int j = 1; j <= 31; j++) {
+            System.out.print(j + "\t\t\t");
+            jump++;
+            if (jump % 7 == 0)
+                System.out.println("\n");
+        }
+    }
+}
