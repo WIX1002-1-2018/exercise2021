@@ -1,8 +1,8 @@
-package holiday;
+package Week06;
 
 import java.util.Scanner;
 
-public class lab4_Q4 {
+public class W06L04 {
 
     public static void main(String[] args) {
         
