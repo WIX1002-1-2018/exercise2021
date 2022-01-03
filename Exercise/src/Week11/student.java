@@ -15,7 +15,7 @@ public class student {
     private String matrixNumber;
 
     public student() {
-        System.out.println("This is the constructor");
+        System.out.println("This is the constructor (this is the parent class)");
     }
     
     public student(int age) {
@@ -66,6 +66,21 @@ public class student {
            return "Red";
     }
     
+    public void printPublic(){
+        System.out.println("This is a public method from parent class");
+    }
+    
+    private void printPrivate(){
+        System.out.println("This is a private method from parent class");
+    }
+    
+    protected void printProtected(){
+        System.out.println("This is a protected method from parent class");
+    }
+    
+    public void accessPrivatePrint(){
+        this.printPrivate();
+    }
     
     
     
