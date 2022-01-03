@@ -45,7 +45,29 @@ public class W11E01 {
         c.age = 23;
         c.setMatrixNumber("U2000023");
         
+        
         c.printOutput();
+        c.printAge();
+        c.colorBasedOnAge();
+        
+        f.printAge();
+        f.printOutput();
+        f.setMatrixNumber("U200021");
+        f.printOutput();
+        f.colorBasedOnAge();
+        
+        
+        System.out.println("this is an object G with color " + g.colorBasedOnAgeReturn());
+        
+        student h = new student(g.name,g.age,g.getMatrixNumber());
+        
+        g.printOutput();
+        h.printOutput();
+        
+        h.name = "Iwan Two";
+        
+        g.printOutput();
+        h.printOutput();
     }
     
 }

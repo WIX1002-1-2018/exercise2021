@@ -48,6 +48,24 @@ public class student {
           System.out.println("Object with value " + this.name + " and " + this.age + " with matrix number " + this.matrixNumber);
     }
     
+    public void printAge(){
+            System.out.println("The age is :" + this.age);
+    }
+    
+    public void colorBasedOnAge(){
+        if(this.age %2 ==0)
+            System.out.println("Blue");
+        else
+            System.out.println("Red");
+    }
+    
+    public String colorBasedOnAgeReturn(){
+        if(this.age %2 ==0)
+           return "Blue";
+        else
+           return "Red";
+    }
+    
     
     
     
