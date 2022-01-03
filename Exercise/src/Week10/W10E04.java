@@ -23,6 +23,7 @@ public class W10E04 {
         
         fruit c = new fruit(100,10);
         System.out.println("total value is :"+ c.methodreturnCalculate());
+        
     }
     
 }

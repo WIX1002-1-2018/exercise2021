@@ -12,12 +12,13 @@ public class fruit {
     
     private int a;
     private int b;
-
+  
     public fruit() {
     }
 
     public fruit(int a) {
         this.a = a;
+       
     }
 
     public fruit(int a, int b) {
