@@ -17,6 +17,7 @@ public class W12E07 {
         // TODO code application logic here
         outerclass outer = new outerclass();
         outerclass.innerclass inner = outer.new innerclass();
+        System.out.println(outer.toString());
     }
     
 }

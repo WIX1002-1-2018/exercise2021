@@ -31,6 +31,11 @@ public class cat extends animal {
         System.out.println("The cat meow");
     }
     
+    @Override
+    public String toString(){
+        System.out.println("Hey");
+        return "This is hello world from Cat";
+    }
     
     
     

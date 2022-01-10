@@ -15,6 +15,10 @@ public class outerclass {
         System.out.println("this is contructor on outerclass");
     }
     
+    @Override
+    public String toString(){
+        return "From outerclass";
+    }
     
     
     public class innerclass{

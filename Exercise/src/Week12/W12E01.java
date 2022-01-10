@@ -25,6 +25,8 @@ public class W12E01 {
         objectA.setPrivateNumber(199);
         System.out.println(objectA.getPrivateNumber());
         
+        System.out.println(objectA.toString());
+        
     }
     
 }

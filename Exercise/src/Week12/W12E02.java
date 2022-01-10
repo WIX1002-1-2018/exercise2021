@@ -29,6 +29,9 @@ public class W12E02 {
         
         obcat1.leg();
         obMonkey.leg();
+        
+        System.out.println(obcat1.toString());
+        System.out.println(obMonkey.toString());
     }
     
 }

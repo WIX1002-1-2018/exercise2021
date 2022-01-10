@@ -48,4 +48,11 @@ public class animal {
         System.out.println("Animal creates sounds");
     }
     
+    @Override
+    public String toString(){
+        String str = "Hello world in animal";
+        return str;
+        
+    }
+    
 }
