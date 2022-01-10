@@ -8,7 +8,7 @@ package Week12;
  *
  * @author Badrul
  */
-public class W12E03 {
+public class W12E06 {
 
     /**
      * @param args the command line arguments
@@ -16,22 +16,21 @@ public class W12E03 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        animal obanimal = new animal();
-        cat obcat = new cat();
-        monkey obmonkey = new monkey();
+        outerclass outer = new outerclass();
+        System.out.println(outer.a);
         
-        obanimal.sound();
-        obcat.sound();
-        obmonkey.sound();
+        outerclass.innerclass inner = outer.new innerclass();
+        System.out.println(inner.b);
+        inner.b =100;
         
-        animal obcat2 = new cat();
-        animal obmonkey2 = new monkey();
+        outerclass.innerclass inner1 = outer.new innerclass();
+        System.out.println(inner1.b);
+        inner1.b =101;
         
-        System.out.println("\n\n\n");
-        obcat2.sound();
-        obmonkey2.sound();
+        System.out.println(inner1.b);
+        System.out.println(inner.b);
         
-      
+        
         
     }
     
