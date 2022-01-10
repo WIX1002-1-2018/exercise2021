@@ -88,17 +88,17 @@ public class main {
         System.out.println(cal.toString());
 
         //Q4
-        Fraction a = new Fraction();
-        Scanner sc = new Scanner(System.in);
+        Fraction aFraction = new Fraction();
+       // Scanner sc = new Scanner(System.in);
         System.out.print("Enter the numerator: ");
         int numerator = sc.nextInt();
         System.out.print("Enter the denominator: ");
         int denominator = sc.nextInt();
-        a.setNumerator(numerator);
-        a.setDenominator(denominator);
-        System.out.println("Numerator: " + a.getNumerator());
-        System.out.println("Denominator: " + a.getDenominator());
-        a.DisplayFraction();
+        aFraction.setNumerator(numerator);
+        aFraction.setDenominator(denominator);
+        System.out.println("Numerator: " + aFraction.getNumerator());
+        System.out.println("Denominator: " + aFraction.getDenominator());
+        aFraction.DisplayFraction();
 
 
         //Q5
