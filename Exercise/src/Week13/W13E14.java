@@ -19,28 +19,38 @@ public class W13E14 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Operation [] operationArray;
+        
+        operationArray = new Operation[10];
+        int j=0;
+        
         int [] number = new int[10];
         try{
             Scanner read = new Scanner(new FileInputStream ("number.txt"));
-            for(int i = 0;i<10;i++){
-                number[i] = read.nextInt();
+            for(j=0;j<operationArray.length;j++){
+                for(int i = 0;i<10;i++){
+                    number[i] = read.nextInt();
+                }
+                operationArray[j] = new Operation(number.clone());
             }
+            
+            
             read.close();
         }catch(FileNotFoundException e){
             System.out.println("Error No File Found");
         }
         
         
-        Operation operationA = new Operation(number);
-        operationA.allOperation();
-        operationA.display();
-        
-        Operation [] operationArray;
-        
-        operationArray = new Operation[10];
+       double highestAverage = operationArray[0].getAvg();
        //each of the object will save each line in the text file.
        //the highest average in between lines; and display which line is the highest.
-        double highestAverage  = operationArray[0].getAvg();
+       for(j=0;j<operationArray.length;j++){
+            highestAverage  = operationArray[j].getAvg();
+            operationArray[j].allOperation();
+            operationArray[j].display();
+       }
+      
         int lines=0;
         
         for(int i=0;i<operationArray.length;i++){
